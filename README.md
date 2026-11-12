@@ -40,3 +40,26 @@ Random Forest Regressor is used to predict students' final grades.
 
 ## Important Note
 The Random Forest model predicts grades. It is separate from the SLM, which is intended to generate student guidance.
+
+## AI Models Used
+
+### 1. Random Forest Regressor
+- Predicts the student's final grade (G3).
+- Uses academic and personal features from the dataset.
+- Evaluated using MAE, RMSE, and R².
+
+### 2. Small Language Model (SLM)
+- Model: Qwen2.5-0.5B-Instruct
+- Uses a pretrained instruction-tuned language model.
+- Generates practical study recommendations based on the predicted grade.
+
+## System Workflow
+
+1. User enters student details.
+2. Random Forest predicts the final grade.
+3. Qwen2.5-0.5B-Instruct generates study recommendations.
+4. Streamlit displays the prediction and guidance.
+
+## Important Note
+
+The Random Forest model performs grade prediction. Qwen2.5-0.5B-Instruct is the pretrained SLM used for generating guidance. The SLM was not trained from scratch for this project.
