@@ -6,13 +6,16 @@ Student Guidance AI is a Small Language Model (SLM)-based application designed t
 
 The project uses **Qwen2.5-0.5B-Instruct**, a compact language model, with a LoRA fine-tuned model converted into GGUF format for local inference through Ollama.
 
+**GitHub Repository:**  
+https://github.com/harshavardhanpolakala-ops/student-performance-slm-project/tree/main
+
 ## 2. Project Objectives
 
 - Provide students with academic guidance.
 - Identify areas where students may need improvement.
 - Generate personalized study recommendations.
 - Demonstrate the application of a Small Language Model in student support.
-- Run the trained model locally using Ollama.
+- Run the model locally using Ollama.
 
 ## 3. Dataset Collection and Preparation
 
@@ -58,7 +61,7 @@ The previously fine-tuned model was converted into GGUF format for local executi
 ## 5. Repository Structure
 
 ```text
-Student-Guidance-AI/
+student-performance-slm-project/
 │
 ├── .gitignore
 ├── README.md
@@ -86,11 +89,9 @@ Student-Guidance-AI/
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd YOUR_REPOSITORY_FOLDER
+git clone https://github.com/harshavardhanpolakala-ops/student-performance-slm-project.git
+cd student-performance-slm-project
 ```
-
-Replace the placeholders with your actual GitHub repository URL and folder name.
 
 ### Step 2: Install dependencies
 
@@ -100,7 +101,7 @@ pip install -r requirements.txt
 
 ### Step 3: Prepare the dataset
 
-Download the dataset from the Hugging Face dataset repository and place the required dataset files in the project directory.
+Ensure the required Parquet dataset files are available in the project directory.
 
 ### Step 4: Run the application
 
